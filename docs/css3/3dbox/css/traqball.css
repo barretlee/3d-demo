@@ -1,6 +1,6 @@
 
 html {
-	background: #000;
+	background: rgba(255, 87, 34, 0.63);
 }
 *{
 	margin: 0px;
@@ -36,7 +36,7 @@ section.box{
 }
 .box > section{
 	-webkit-box-sizing:border-box;
-	border:1px solid white;
+	border:1px solid #03A9F4;
 	background:rgba(255, 255, 255, 0.2);
 	text-align:center;
 	color:white;
