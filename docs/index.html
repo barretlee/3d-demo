@@ -6,3 +6,12 @@
 <ul>
   <li><a href="./webgl/flight/index.html">Rotate Flight</a></li>
 </ul>
+
+
+{% for items in site.data.routes %}
+<ul>
+  {% for item in items %}
+  <li>{{item}} {{items[item]}}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
