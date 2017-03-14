@@ -3,20 +3,11 @@ layout: default
 title: 小胡子哥的 3d 仓库
 ---
 
-<h3>CSS3 3D Demo</h3>
-<ul>
-  <li><a href="./css3/3dbox/index.html">Rotate 3d box</a></li>
-</ul>
-<h3>WebGL Demo</h3>
-<ul>
-  <li><a href="./webgl/flight/index.html">Rotate Flight</a></li>
-</ul>
-
-
 {% for items in site.data.routes %}
+<h3>{{items}}</h3>
 <ul>
-  {% for item in items %}
-  <li>{{item}} {{items[item]}}</li>
+  {% for item in site.data.routes[items] %}
+  <li><a href="{{site.data.routes[items][item]}}">{{item}}</a></li>
   {% endfor %}
 </ul>
 {% endfor %}
